@@ -53,6 +53,7 @@ public class MainMenu {
             case 7:
                 exit = true;
                 System.out.println("Exiting the system. Goodbye!");
+                System.exit(0);
                 break;
             default:
                 System.out.println("Invalid option. Please try again.");

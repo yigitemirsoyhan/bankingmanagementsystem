@@ -10,7 +10,7 @@ INSERT INTO Customer (customer_ssn, cust_first_name, cust_last_name, phone_num, 
 ('777-77-7777', 'George', 'Clooney', '555-1007', '404 Willow St'),
 ('888-88-8888', 'Lebron', 'James', '555-1008', '505 Lakers St'),
 ('999-99-9999', 'Lionel', 'Messi', '555-1009', '606 Goat St'),
-('123-45-6789', 'Zeynep', 'Sonmez', '555-1010', '707 Grand Slam St');
+('000-00-0000', 'Zeynep', 'Sonmez', '555-1010', '707 Grand Slam St');
 
 INSERT INTO Branch (branch_name, location) VALUES
 ('Levent1', 'Istanbul'),
