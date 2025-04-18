@@ -19,11 +19,11 @@ public class EmployeeMenu {
                 case 2 -> modifyEmployee(connection, scanner);
                 case 3 -> deleteEmployee(connection, scanner);
                 case 4 -> viewEmployee(connection, scanner);
-                case 5 -> MainMenu.display();
-                case 6 -> {
+                case 5 -> {
                     return;
                 }
                 default -> System.out.println("Invalid option. Try again.");
+
             }
 
         }
@@ -57,6 +57,7 @@ public class EmployeeMenu {
         try {
             System.out.println("Enter Employee ID to be Modified: ");
             int employeeID = scanner.nextInt();
+            scanner.nextLine();
             System.out.println("Enter the New First Name: ");
             String firstName = scanner.next();
             System.out.println("Enter the New Last Name: ");

@@ -23,8 +23,7 @@ public class CustomerMenu {
                 case 2 -> modifyCustomer(connection, scanner);
                 case 3 -> deleteCustomer(connection, scanner);
                 case 4 -> searchCustomer(connection, scanner);
-                case 5 -> MainMenu.display();
-                case 6 -> {
+                case 5 -> {
                     return;
                 }
                 default -> System.out.println("Invalid option. Try again.");

@@ -7,12 +7,16 @@ public class TransactionMenu {
     public static void display(Connection connection, Scanner scanner) {
         while (true) {
             System.out.println("-----------------------------------------------------------------");
-            System.out.println("| 6. Transaction                                                |");
-            System.out.println("|      -1  View Transaction History                             |");
+            System.out.println("| 6. Transaction                                                 |");
+            System.out.println("|      -1  View Transaction History                              |");
+            System.out.println("|      -2  Exit                                                  |");
             System.out.println("-----------------------------------------------------------------");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1 -> viewTransactionHistory(connection,scanner);
+                case 2 -> {
+                    return;
+                }
             }
         }
     }

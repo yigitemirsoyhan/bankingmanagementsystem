@@ -14,6 +14,7 @@ public class AccountMenu {
             System.out.println("|      -4  Transfer Funds                                       |");
             System.out.println("|      -5  Check Account Balance                                |");
             System.out.println("|      -6  Close Account                                        |");
+            System.out.println("|      -7  Exit                                                 |");
             System.out.println("-----------------------------------------------------------------");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -39,8 +40,9 @@ public class AccountMenu {
         String ssn = scanner.nextLine();
         System.out.print("Enter the Branch ID of the New Account: ");
         int branchid= scanner.nextInt();
+        scanner.nextLine();
         System.out.print("Enter the Currency type of the New Account: ");
-        String currency = scanner.nextLine();
+        String currency = scanner.nextLine().trim().toUpperCase();
         String sql = "INSERT INTO Account(customer_ssn,branch_id, currency_type) VALUES(?,?,?)";
         PreparedStatement stmt = connection.prepareStatement(sql);
         stmt.setString(1,ssn);
